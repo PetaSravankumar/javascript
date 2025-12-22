@@ -9,11 +9,18 @@
     <button onclick="console.log(`Cart quantati : ${count}`);
     ">Show cart</button>
     <button onclick="
-        console.log(`Add to the cart : ${count}+1`);
+        count+=1
+        console.log(`Add to the cart : ${count}`);
         
     ">add cart</button>
-    <button>+2</button>
-    <button>+3</button>
+    <button onclick="
+        count+=2
+        console.log(`Cart quantati : ${count}`)
+    ">+2</button>
+    <button onclick="
+        count+=3
+        console.log(`Cart quantati : ${count}`)
+    ">+3</button>
     <button>Reset cart</button>
     <script>
         let count=0
