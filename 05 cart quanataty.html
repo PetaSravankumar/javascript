@@ -15,13 +15,16 @@
     ">add cart</button>
     <button onclick="
         count+=2
-        console.log(`Cart quantati : ${count}`)
+        console.log(`2 Items Add to the cart : ${count}`)
     ">+2</button>
     <button onclick="
         count+=3
-        console.log(`Cart quantati : ${count}`)
+        console.log(`3 Items Add to the cart : ${count}`)
     ">+3</button>
-    <button>Reset cart</button>
+    <button onclick="
+        count=0
+        console.log(`cart is reset : ${count}`)
+    ">Reset cart</button>
     <script>
         let count=0
 
