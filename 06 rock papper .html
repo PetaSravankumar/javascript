@@ -11,7 +11,7 @@
         ">Rock</button>
     <button onclick="
         playGame('scissor')
-        ">Paper</button>
+        ">Scissor</button>
     <button onclick="
         playGame('paper')
     ">Paper</button>
@@ -22,13 +22,13 @@
             let result='';
             if (playerMove==='rock'){
                 if(computerMove==='rock'){
-                result='Win'
+                result='Tie'
                 }
                 else if(computerMove==='scissor'){
-                    result='Lose'
+                    result='Win'
                 }
                 else{
-                    result='Tie'
+                    result='Lose'
                 }
             }
             else if(playerMove==='scissor'){
@@ -53,7 +53,7 @@
                     result='Tie'
                 }
             }
-            alert(`your Move Rock computerMove ${computerMove} : ${result}`)
+            alert(`your Move ${playerMove} computerMove ${computerMove} : ${result}`)
             
         }
 
