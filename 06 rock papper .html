@@ -23,12 +23,12 @@
     alert(`Score is reset Win:${score.win} Lose:${score.lose} Tie:${score.Tie}`)
     ">ReSet</button>
     <script>
-        const score={
+        const score=JSON.parse(localStorage.getItem('score'))||{
             win:0,
             lose:0,
             Tie:0
         }
-        localStorage.setItem('score')
+        JSON.parse(localStorage.setItem('score'))
         function playGame(playerMove){
             const computerMove=pickComputerMove()
             let result='';
