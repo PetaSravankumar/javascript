@@ -28,6 +28,7 @@
             lose:0,
             Tie:0
         }
+        localStorage.setItem('score')
         function playGame(playerMove){
             const computerMove=pickComputerMove()
             let result='';
@@ -73,6 +74,8 @@
             else if(result==="Tie"){
                 score.Tie+=1
             }
+            localStorage.setItem('score',JSON.stringify(score))
+
             alert(`your Move ${playerMove} computerMove ${computerMove} : ${result}
             Win :${score.win} Lose:${score.lose} Tie:${score.Tie}
             `)   
