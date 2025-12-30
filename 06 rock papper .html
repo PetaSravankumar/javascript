@@ -58,9 +58,19 @@
                     result='Tie'
                 }
             }
-            alert(`your Move ${playerMove} computerMove ${computerMove} : ${result}`)
-            
+            if(result==='Win'){
+                score.win+=1
+            }
+            else if(result==='Lose'){
+                score.lose+=1
+            }
+            else if(result==="Tie"){
+                score.Tie+=1
+            }
+            alert(`your Move ${playerMove} computerMove ${computerMove} : ${result}`)   
         }
+
+        
 
         function pickComputerMove(){
             const randomnumber=Math.random()
