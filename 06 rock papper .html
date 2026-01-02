@@ -77,10 +77,11 @@
                 score.Tie+=1
             }
             localStorage.setItem('score',JSON.stringify(score))
-
+            document.querySelector('.js').innerHTML=`Win :${score.win} Lose:${score.lose} Tie:${score.Tie}`
             alert(`your Move ${playerMove} computerMove ${computerMove} : ${result}
             Win :${score.win} Lose:${score.lose} Tie:${score.Tie}
             `)   
+
         }
 
         
