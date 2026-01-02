@@ -15,6 +15,7 @@
     <button onclick="
         playGame('paper')
     ">Paper</button>
+    <p class="js"></p>
     <button onclick="
     score.win=0
     score.lose=0
@@ -25,10 +26,11 @@
     <script>
         const score=JSON.parse(localStorage.getItem('score'))||{
             win:0,
+            
             lose:0,
             Tie:0
         }
-        JSON.parse(localStorage.setItem('score'))
+        document.querySelector('.js').innerHTML=`Win :${score.win} Lose:${score.lose} Tie:${score.Tie}`
         function playGame(playerMove){
             const computerMove=pickComputerMove()
             let result='';
