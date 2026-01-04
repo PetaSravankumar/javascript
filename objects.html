@@ -6,21 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <button>Hloo</button>
+    <button onclick="click()" class="js">Hloo</button>
     <script>
-        let object={
-            message:"Good job",
-            price:450
+        function click(){
+             let element=document.querySelector('.js')
+        if(element.innerHTML==="Hloo"){
+            element.innerHTML="hi"
         }
-        console.log(object);
-        const {price,message}=object;
+        else{
+           element.innerHTML="hl000" 
+        }
+        }
        
-        console.log(price);
-        console.log(message);
-       
-      
-        document.querySelector('button').innerHTML='sravan'
-        
+
     </script>
     
 </body>
