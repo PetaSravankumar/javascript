@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(25,25, 25);
+            color: white;
+            font-family: Arial;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <h2 class="title">ROCK ,PAPER,SCISSOR</h2>
     <button onclick="
      playGame('rock')
-        ">Rock</button>
+        "><img src="ROck.png" alt="Rock image"></button>
     <button onclick="
         playGame('scissor')
-        ">Scissor</button>
+        "><img src="scissor.png" alt="scissor image"></button>
     <button onclick="
         playGame('paper')
-    ">Paper</button>
+    "><img src="paper.png" alt="paper image"></button>
     <p class="js-result"></p>
     <p class="js-move"></p>
     <p class="js"></p>
