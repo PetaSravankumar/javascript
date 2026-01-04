@@ -1,0 +1,32 @@
+body{
+            background-color: rgb(25,25, 25);
+            color: white;
+            font-family: Arial;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .image1{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        .choice-btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin: 10px;
+}
+.image2{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+}
