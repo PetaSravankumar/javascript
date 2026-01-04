@@ -14,19 +14,42 @@
             font-size: 30px;
             font-weight: bold;
         }
+        .image1{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        .choice-btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin: 10px;
+}
+.image2{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+}
     </style>
 </head>
 <body>
     <h2 class="title">ROCK ,PAPER,SCISSOR</h2>
-    <button onclick="
+    <button class="choice-btn" onclick="
      playGame('rock')
-        "><img src="ROck.png" alt="Rock image"></button>
-    <button onclick="
+        "><img class="image1" src="ROck.png" alt="Rock image"></button>
+    <button class="choice-btn" onclick="
         playGame('scissor')
-        "><img src="scissor.png" alt="scissor image"></button>
-    <button onclick="
+        "><img class="image1" src="scissor.png" alt="Rock image"></button>
+    <button class="choice-btn" onclick="
         playGame('paper')
-    "><img src="paper.png" alt="paper image"></button>
+    "><img class="image1" src="paper.png" alt="paper image"></button>
     <p class="js-result"></p>
     <p class="js-move"></p>
     <p class="js"></p>
@@ -94,7 +117,7 @@
             localStorage.setItem('score',JSON.stringify(score))
             updateScore()
             document.querySelector('.js-result').innerHTML=result
-            document.querySelector('.js-move').innerHTML=`Your Move : ${playerMove}   computer move : ${computerMove}`
+            document.querySelector('.js-move').innerHTML=`Your Move :<img class="image2" src="${playerMove}.png" alt="Rock image">  computer move : <img class="image2" src="${computerMove}.png" alt="Rock image">`
         }
         
         function updateScore(){
