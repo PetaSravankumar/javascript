@@ -1,6 +1,11 @@
-todoarray=[]
+let todoarray=[]
 function add(){
-    let element=document.querySelector("js-element").value
-    console.log(element);
+    let input=document.querySelector(".js-element")
+    let value=input.value
+    console.log(value);
+    todoarray.push(value)
+    console.log((todoarray));
+    input.value="";
+    
     
 }
