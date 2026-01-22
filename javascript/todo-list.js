@@ -4,7 +4,10 @@ function renderTodolists(){
     let todolisthtml=""
     for (let i=0;i<todoarray.length;i++){
         const todo=todoarray[i]
-        const html=`<p>${todo} <button>Delete</button></p>`
+        const html=`<p>${todo} 
+        <button onclick="todoarray.splice(${i},1);renderTodolists(); ">Delete</button>
+        
+        </p>`
         todolisthtml+=html
     }
     console.log(todolisthtml);
