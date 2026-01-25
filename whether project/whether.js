@@ -10,11 +10,10 @@ function searchHandel(){
         fetch(`${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`)
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
-            console.log("city :",data.name);
-            console.log("Temperature:", data.main.temp);
-            console.log("Weather::",data.weather[0].description);
-           
+            
+            document.getElementById('city').innerText=data.name
+            document.getElementById('temp').innerText=data.main.temp
+            document.getElementById('desc').innerText=data.weather[0].description           
             
         })
         .catch(err=>{console.log(err)})
