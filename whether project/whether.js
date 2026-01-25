@@ -10,7 +10,7 @@ function searchHandel(){
         fetch(`${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`)
         .then(res=>res.json())
         .then(data=>{
-            if (data.cod!=200){
+            if (data.cod!==200){
                 alert(data.message);
                 return
             }
@@ -26,9 +26,13 @@ function searchHandel(){
         })
         .catch(err=>{console.log(err)})
     }
-    
-    
 }
+
+document.querySelector('.js-search').addEventListener("keydown",function(e){
+    if(e.key==='Enter'){
+        searchHandel()
+    }
+})
 
 
 
