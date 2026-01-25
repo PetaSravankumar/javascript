@@ -13,8 +13,9 @@ function searchHandel(){
             console.log(data);
             document.getElementById('city').innerText=`City :${data.name}`
             document.getElementById('temp').innerText=`Temperature :${data.main.temp}`
-            document.getElementById('desc').innerText=`Weather :${data.weather[0].description }`          
-            
+            document.getElementById('desc').innerText=`Weather :${data.weather[0].description }` 
+            document.getElementById('presure').innerHTML=`Pressure :${data.main.pressure}`
+            document.getElementById('wind').innerText=`Wind Speed :${data.wind.speed}`            
         })
         .catch(err=>{console.log(err)})
     }

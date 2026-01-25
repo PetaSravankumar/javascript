@@ -17,10 +17,16 @@
     justify-content: center;
     flex-direction: column;
 }
+.js-search{
+    width: 250px;
+
+}
 .js-search,button{
     background-color: #D2C1B6;
     color: #456882;
-    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    
 }
 .weather-card{
     background-color: #234C6A;
@@ -30,4 +36,5 @@
     border: solid ;
     border-radius: 10px;
     line-height: 40px;
+    align-items: center;
 }
