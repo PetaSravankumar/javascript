@@ -3,20 +3,28 @@
     padding: 0;
 }
 .parent{
-    background-color: aqua;
+    background-color:#1B3C53;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 100vh;
 
-}
-.search input ,button{
-    background-color: aquamarine;
-    color:rgb(45, 123, 65);
 }
 .search{
-    background-color: blueviolet;
-    height: 100px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.js-search,button{
+    background-color: #D2C1B6;
+    color: #456882;
+    text-align: center;
+}
+.weather-card{
+    background-color: #234C6A;
+    color:#D2C1B6;
+    width: 300px;
+    
 }

@@ -11,9 +11,9 @@ function searchHandel(){
         .then(res=>res.json())
         .then(data=>{
             
-            document.getElementById('city').innerText=data.name
-            document.getElementById('temp').innerText=data.main.temp
-            document.getElementById('desc').innerText=data.weather[0].description           
+            document.getElementById('city').innerText=`City :${data.name}`
+            document.getElementById('temp').innerText=`Temperature :${data.main.temp}`
+            document.getElementById('desc').innerText=`Weather :${data.weather[0].description }`          
             
         })
         .catch(err=>{console.log(err)})
