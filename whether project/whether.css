@@ -25,6 +25,9 @@
 .weather-card{
     background-color: #234C6A;
     color:#D2C1B6;
-    width: 300px;
-    
+    width: 250px;
+    height:250px;
+    border: solid ;
+    border-radius: 10px;
+
 }
