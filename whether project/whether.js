@@ -12,6 +12,8 @@ function searchHandel(){
         .then(data=>{
             console.log(data);
             console.log("city :",data.name);
+            console.log("Temperature:", data.main.temp);
+            console.log("Weather::",data.weather[0].description);
            
             
         })
