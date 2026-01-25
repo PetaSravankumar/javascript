@@ -10,13 +10,18 @@ function searchHandel(){
         fetch(`${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`)
         .then(res=>res.json())
         .then(data=>{
+            if (data.cod!=200){
+                alert(data.message);
+                return
+            }
             console.log(data);
             document.getElementById('city').innerText=`City :${data.name}`
-            document.getElementById('temp').innerText=`Temperature :${data.main.temp}`
+            document.getElementById('temp').innerText=`Temperature :${data.main.temp} °C`
             document.getElementById('desc').innerText=`Weather :${data.weather[0].description }` 
-            document.getElementById('presure').innerHTML=`Pressure :${data.main.pressure}`
-            document.getElementById('wind').innerText=`Wind Speed :${data.wind.speed}`  
+            document.getElementById('presure').innerHTML=`Pressure :${data.main.pressure} hPa`
+            document.getElementById('wind').innerText=`Wind Speed :${data.wind.speed} m/s`  
             document.getElementById("weather-card").style.display = "block";
+            document.querySelector(".js-search").value=""
           
         })
         .catch(err=>{console.log(err)})
