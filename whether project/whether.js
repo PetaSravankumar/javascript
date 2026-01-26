@@ -37,6 +37,14 @@ document.querySelector('.js-search').addEventListener("keydown",function(e){
 })
 function searchbackground(weatherdata){
     let parent=document.querySelector(".parent")
+    switch (weatherdata) {
+        case "Clear":
+            parent.style.backgroundImage="url('')"
+            break;
+    
+        default:
+            break;
+    }
 }
 
 
