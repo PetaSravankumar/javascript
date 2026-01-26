@@ -39,9 +39,10 @@ function searchbackground(weatherdata){
     let parent=document.querySelector(".parent")
     switch (weatherdata) {
         case "Clear":
-            parent.style.backgroundImage="url('')"
+            parent.style.backgroundImage="url('images/clear sky.jpg')"
             break;
-    
+        case "Clouds":
+            parent.style.backgroundImage="url('images/clouds.jpeg')"
         default:
             break;
     }
