@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="whether.css">
+</head>
+<body>
+    <div class="parent">
+        <center><h1>Weather Application</h1></center>
+        <div class="search">
+            <input class="js-search" type="text" placeholder="enter the city" required><br><br>
+            <button onclick="searchHandel()">submit</button>
+            <div class="weather-card" id="weather-card">
+                <h2 id="city"></h2>
+                <h2 id="temp"></h2>
+                <h2 id="desc"></h2>
+                <h2 id="presure"></h2>
+                <h2 id="wind"></h2>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="whether.js"></script>
+</body>
+</html>
