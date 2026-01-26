@@ -47,6 +47,11 @@ function searchbackground(weatherdata){
         case "Mist":
             parent.style.backgroundImage="url('images/mist.jpg)"
             break
+        case "Rain":
+            parent.style.backgroundImage="url('imgaes/rain.jpeg)"
+            break
+        case "Snow":
+            
         default:
             break;
     }
