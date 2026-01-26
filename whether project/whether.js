@@ -39,22 +39,23 @@ function searchbackground(weatherdata){
     let parent=document.querySelector(".parent")
     switch (weatherdata) {
         case "Clear":
-            parent.style.backgroundImage="url('images/clear sky.jpg')"
+            parent.style.backgroundImage="url('whether project/images/clear.jpg')"
             break;
         case "Clouds":
-            parent.style.backgroundImage="url('images/clouds.jpeg')"
+            parent.style.backgroundImage="url('whether project/images/clouds.jpeg')"
             break
         case "Mist":
-            parent.style.backgroundImage="url('images/mist.jpg')"
+        case "Haze":
+            parent.style.backgroundImage="url('whether project/images/mist.jpg')"
             break
         case "Rain":
-            parent.style.backgroundImage="url('images/rain.jpeg')"
+            parent.style.backgroundImage="url('whether project/images/rain.jpeg')"
             break
         case "Snow":
-            parent.style.backgroundImage="url('images/snow.jpg')"
+            parent.style.backgroundImage="url('whether project/images/snow.jpg')"
             break
         default:
-            parent.style.backgroundImage="url('images/default.jpg')"
+            parent.style.backgroundImage="url('whether project/images/default.jpg')"
             break;
     }
 }
