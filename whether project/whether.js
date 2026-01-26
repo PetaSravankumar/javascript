@@ -22,6 +22,8 @@ function searchHandel(){
             document.getElementById('wind').innerText=`Wind Speed :${data.wind.speed} m/s`  
             document.getElementById("weather-card").style.display = "block";
             document.querySelector(".js-search").value=""
+
+            searchbackground(data.weather[0].main)
           
         })
         .catch(err=>{console.log(err)})
@@ -33,6 +35,10 @@ document.querySelector('.js-search').addEventListener("keydown",function(e){
         searchHandel()
     }
 })
+function searchbackground(weatherdata){
+    let parent=document.querySelector(".parent")
+}
+
 
 
 
